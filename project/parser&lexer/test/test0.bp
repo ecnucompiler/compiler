@@ -1,0 +1,27 @@
+/**
+ * 正确的测试数据
+ */
+// macroDef
+// 6 kinds of binary operator
+
+define _Aa !(0 & (1 => 0) ^ (0 != 1 = 0) | 0) = *
+define c ((((((((0))))))))
+define cc 0^0 | *=!*
+
+// varDecl
+global _cdCGFDG vnmo58439058
+
+// can declare id of a stack id for several time
+local a _dsvndljknv          _dnsvjdsnv4573985
+local a
+local b _dsvndsjkvn       _____nbciuahsc7859473
+
+
+// initConfig
+(aavd <dnvslvnd>)
+
+
+// ruleList
+aaa < ccc > --> aaa < >
+aaa < ccc > --> aaa < ccc >
+aaa < ccc > --> aaa < ccc ccc > "aaaa" (ddddd)

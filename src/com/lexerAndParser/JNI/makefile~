@@ -1,0 +1,16 @@
+JAVA=/home/chenkai/Desktop/jdk1.8.0_60
+ProDir=/home/chenkai/workspace/CompileProject
+libgoodlucky.so:TestJNI.o makefile  
+	gcc -Wall -rdynamic -shared -o libgoodlucky.so TestJNI.o  
+TestJNI.o:TestJNI.c com_lexerAndParser_JNI_TestJNI.h  
+	gcc -w -Wall -fPIC -c TestJNI.c -I./ -I $(JAVA)/include -I $(JAVA)/include/linux
+
+com_lexerAndParser_JNI_TestJNI.h :TestJNI.class 
+	javah -classpath  $(ProDir)/src -jni  com.lexerAndParser.JNI.TestJNI
+TestJNI.class:TestJNI.java
+	javac -classpath  $(ProDir)/src - com.lexerAndParser.JNI.TestJNI.java
+cl:  
+	rm  *.o 
+	rm *.so 
+	rm *.class 
+	rm com_lexerAndParser_JNI_TestJNI.h 

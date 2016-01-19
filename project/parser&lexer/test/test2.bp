@@ -1,0 +1,11 @@
+/**
+ * 测试varDecl部分
+ */
+global aaa  ccc1
+local a <>
+local 0 cccccc dddddd
+local aaa bbb ccc ddd
+local ccc aaa bb dddd
+
+
+(aa <ccc>)

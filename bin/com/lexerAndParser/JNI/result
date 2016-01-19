@@ -1,0 +1,6 @@
+error: 1:9 conflict: 'a' is 'stack id', can't be used as 'id'.
+error: 3:6 syntax error.
+error: 3:6 expecting valid id.
+error: 3:6 expecting valid id.
+error: 3:10 redefination: 'c'.
+error: 3:10 expecting valid id.

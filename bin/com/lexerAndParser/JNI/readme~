@@ -1,0 +1,6 @@
+TestJNI.c　中是对进行解析和扫描，需要修改其中的两个函数
+make 编译
+lex yacc TestJNI.c  已经变成了一个动态链接库libgoodlucky.so
+不同的机器可能需要配置出链接库的查找地址，或者直接将编译出的.so 放到 /usr/lib　下
+
+

@@ -1,0 +1,10 @@
+/**
+ * 测试rule部分
+ */
+
+(a <bb>)
+
+aaa <ccc> -- aaa <ccc a>
+aaa <ccc> -> aaa <>
+aaa ccc> --> aaa <>
+aaa <ccc> --> aaa <

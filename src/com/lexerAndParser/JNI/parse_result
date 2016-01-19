@@ -1,0 +1,20 @@
+error: 5:6 syntax error.
+error: 5:6 character missing: expecting ')'.
+error: 5:13 syntax error.
+error: 5:13 expecting valid macro define.
+error: 5:13 expecting valid macro define.
+error: 7:8 redefination: 'w'.
+error: 7:10 syntax error.
+error: 7:10 expecting valid expression.
+error: 8:7 expecting valid macro define.
+error: 8:11 expecting valid macro define.
+error: 8:13 expecting valid macro define.
+error: 9:11 expecting valid expression.
+error: 10:8 expecting valid id.
+error: 10:11 expecting valid macro define.
+error: 10:11 expecting valid macro define.
+error: 10:13 expecting valid macro define.
+error: 13:13 redefination: 'ccc'.
+error: 15:4 conflict: 'aaa' is 'id', can't be used as 'ctrl id'.
+error: 15:10 conflict: 'ccc' is 'id', can't be used as 'stack id'.
+successful parsing!
