@@ -1,15 +1,10 @@
 /**
- * 测试macro部分
+ * 测试rule部分
  */
-define w (0            //缺少一个）
-define aaa 00          //定义无效
-define cc !0^1         
-define w O             //w重复定义
-definee www 0          //definee不是一个正确的expression，定义无效
-define ww )            //）出现在这里是无效的
-define 0www 0          //0不是一个有效的id
-define ccc 1
 
-global aa ccc          //ccc重复定义
+(a <bb>)
 
-(aaa < ccc >)          //aaa不能用于ctrl id,ccc不能用于stack id
+aaa <ccc> -- aaa <ccc a>    //a不能用作stack id
+aaa <ccc> -> aaa <>         //缺少一个-
+aaa ccc> --> aaa <>         //c前缺少一个<
+aaa <ccc> --> aaa <         //最后缺少一个>
