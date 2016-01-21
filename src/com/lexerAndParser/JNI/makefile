@@ -1,5 +1,5 @@
 JAVA=/home/chenkai/Desktop/jdk1.8.0_60
-ProDir=/home/chenkai/workspace/CompileProject
+ProDir=/home/chenkai/git/compiler
 libgoodlucky.so:makefile TestJNI.o lex.yy.o y.tab.o symtab.o error.o parse
 	g++ -w  -fPIC -rdynamic -shared -o libgoodlucky.so TestJNI.o  y.tab.o lex.yy.o symtab.o error.o -ll -ly
 	

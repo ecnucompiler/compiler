@@ -1,10 +1,11 @@
-    #include <stdio.h>  
+#include <stdio.h>
 #include<string.h>
 #include<stdlib.h>
 #include<iostream>
 #include<fstream>
 #include<string>
-        #include "com_lexerAndParser_JNI_TestJNI.h"
+#include "com_lexerAndParser_JNI_TestJNI.h"
+#include<unistd.h>
 using namespace std;
         int myx=0;
 
@@ -35,9 +36,14 @@ using namespace std;
                	char *str = jstringTostring(env,jstr);
                	        //		string ss = string(str);
                	//在这里ss和str均为输入的代码，现在要将调用yacc得到错误信息返回
+               	char *locc= getcwd(NULL,0);
+#ifdef linux
+               	string loc=string(locc)+"/src/com/lexerAndParser/JNI/";
+#endif
+#ifdef _WIN32
+               	string loc=string(locc)+"\src\com\lexerAndParser\JNI\";
+#endif
 
-
-               	string loc="/home/chenkai/workspace/CompileProject/src/com/lexerAndParser/JNI/";
                	string parse=loc+"parse";
                	string code=loc+"parse_in";
                	string result=loc+"parse_result";
@@ -46,7 +52,7 @@ using namespace std;
                	     if (out.is_open())
                	    {
                	        out<<str;
-               	     }
+              	     }
                	     out.close();
 
 
@@ -77,7 +83,13 @@ using namespace std;
         	char *str = jstringTostring(env,jstr);
         //	string ss = string(str);
 //在这里ss和str均为输入的代码，现在要将调用lex得到词素序列返回
-        	string loc="/home/chenkai/workspace/CompileProject/src/com/lexerAndParser/JNI/";
+         	char *locc= getcwd(NULL,0);
+#ifdef linux
+               	string loc=string(locc)+"/src/com/lexerAndParser/JNI/";
+#endif
+#ifdef _WIN32
+               	string loc=string(locc)+"\src\com\lexerAndParser\JNI\";
+#endif
                        	string scan=loc+"lex";
                        	string code=loc+"scan_in";
                        	string result=loc+"scan_result";
