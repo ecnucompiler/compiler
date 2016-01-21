@@ -1,0 +1,11 @@
+/**
+ * 测试varDecl部分
+ */
+global aaa  ccc1
+local a <>                 //<>不是有效的id
+local 0 cccccc dddddd      //0不是有效的stack id
+local aaa bbb ccc ddd      //aaa不能用于stack id
+local ccc aaa bb dddd      //aaa重复定义
+
+
+(aa <ccc>)                 //ccc不能用于stack id

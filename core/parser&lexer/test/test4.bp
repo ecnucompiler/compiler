@@ -1,0 +1,10 @@
+/**
+ * 测试rule部分
+ */
+
+(a <bb>)
+
+aaa <ccc> -- aaa <ccc a>    //a不能用作stack id
+aaa <ccc> -> aaa <>         //缺少一个-
+aaa ccc> --> aaa <>         //c前缺少一个<
+aaa <ccc> --> aaa <         //最后缺少一个>
